@@ -7,7 +7,11 @@
 ```text
 dev-infra/
 ├── services/
-│   └── minio/
+│   ├── minio/
+│   │   ├── docker-compose.yml
+│   │   ├── .env.example
+│   │   └── README.md
+│   └── postgres/
 │       ├── docker-compose.yml
 │       ├── .env.example
 │       └── README.md
