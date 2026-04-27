@@ -11,6 +11,10 @@ dev-infra/
 │   │   ├── docker-compose.yml
 │   │   ├── .env.example
 │   │   └── README.md
+│   ├── minio-bitnami/
+│   │   ├── docker-compose.yml
+│   │   ├── .env.example
+│   │   └── README.md
 │   └── postgres/
 │       ├── docker-compose.yml
 │       ├── .env.example
@@ -24,3 +28,4 @@ dev-infra/
 - 真实环境变量只保存在本地 `.env`
 - 持久化数据统一落到 Desktop 下的 `.docker/`
 - 每个服务目录都可以独立 `docker compose up -d`
+- `services/minio/` 是官方 MinIO 镜像方案，`services/minio-bitnami/` 是 Bitnami 变体
